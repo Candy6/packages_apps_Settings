@@ -141,5 +141,9 @@
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_title_eos">Brightness slider</string>
     <string name="qs_brightness_slider_summary">Show a brightness slider in the Quick Settings panel</string>
+
+    <!-- Quick Settings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
+    <string name="quick_settings_vibrate_summary">Vibrate when touching the Quick Settings tiles</string>
     
 </resources>
