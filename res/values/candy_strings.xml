@@ -146,7 +146,12 @@
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
     <string name="quick_settings_vibrate_summary">Vibrate when touching the Quick Settings tiles</string>
 
-    <!-- QuickSettings 4 columns -->
+    <!-- Quick Settings 4 columns -->
     <string name="qs_four_columns_title">Show four tiles per row in Quick Settings</string>
+
+    <!-- Quick Settings main tiles -->
+    <string name="qs_main_tiles_title">Enlarge the first row in Quick Settings</string>
+    <string name="qs_main_tiles_summary_on">Show two main tiles on the first row</string>
+    <string name="qs_main_tiles_summary_off">Show three or four tiles on each row</string>
     
 </resources>
