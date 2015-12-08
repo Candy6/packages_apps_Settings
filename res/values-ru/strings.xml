@@ -2904,4 +2904,20 @@
     <string name="write_settings_description" msgid="6868293938839954623">"Приложение сможет изменять системные настройки."</string>
     <string name="write_settings_on" msgid="8230580416068832239">"Да"</string>
     <string name="write_settings_off" msgid="5156104383386336233">"Нет"</string>
+    <string name="camera_gesture_title" msgid="1075838577642393011">"Включать камеру движением запястья"</string>
+    <string name="camera_gesture_desc" msgid="1831390075255870960">"Чтобы открыть приложение \"Камера\", дважды поверните запястье."</string>
+    <string name="camera_double_tap_power_gesture_title" msgid="1651873760405034645">"Камера двойным нажатием кнопки питания"</string>
+    <string name="camera_double_tap_power_gesture_desc" msgid="7355664631775680376">"Быстро открывать камеру, не снимая блокировку экрана."</string>
+  <string-array name="color_mode_names">
+    <item msgid="2425514299220523812">"Насыщенный (по умолчанию)"</item>
+    <item msgid="8446070607501413455">"Естественный"</item>
+    <item msgid="6553408765810699025">"Стандартный"</item>
+  </string-array>
+  <string-array name="color_mode_descriptions">
+    <item msgid="4979629397075120893">"Улучшенные цвета"</item>
+    <item msgid="8280754435979370728">"Натуральные цвета, привычные глазу"</item>
+    <item msgid="5363960654009010371">"Цвета, оптимизированные для цифрового контента"</item>
+  </string-array>
+    <string name="picture_color_mode" msgid="4560755008730283695">"Цветовой режим"</string>
+    <string name="picture_color_mode_desc" msgid="1141891467675548590">"Использовать sRGB"</string>
 </resources>
