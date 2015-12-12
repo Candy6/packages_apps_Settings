@@ -15,9 +15,20 @@
 */
 package com.android.settings.candy;
 
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.os.Bundle;
+import android.preference.Preference;
+import android.preference.PreferenceScreen;
+
 import com.android.settings.R;
+import com.android.settings.candy.SystemSettingSwitchPreference;
 import com.android.settings.SettingsPreferenceFragment;
+
+import java.util.List;
+
+import com.android.internal.logging.MetricsLogger;
 
 public class MiscSettings extends SettingsPreferenceFragment {
 
@@ -25,5 +36,11 @@ public class MiscSettings extends SettingsPreferenceFragment {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.misc_settings);
+    }
+    
+    @Override
+    protected int getMetricsCategory()
+    {
+	return MetricsLogger.APPLICATION;
     }
 }
