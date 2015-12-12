@@ -53,6 +53,8 @@
  
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
+    <!-- LayersManager -->
+    <string name="bitsyko_layers">Layers manager</string>
 
     <!-- kill app long press back -->
     <string name="kill_app_longpress_back">Kill app back button</string>

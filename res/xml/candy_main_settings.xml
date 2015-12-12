@@ -22,6 +22,17 @@
          android:fragment="com.android.settings.candy.ButtonSettings"
          android:title="@string/button_settings_title" />
 
+     <!-- Layers -->
+     <PreferenceScreen
+         android:id="@+id/bitsyko_layers"
+         android:icon="@drawable/ic_bitsyko_layers"
+         android:title="@string/bitsyko_layers">
+         <intent
+             android:action="android.intent.action.MAIN"
+             android:targetPackage="com.lovejoy777.rroandlayersmanager"
+             android:targetClass="com.lovejoy777.rroandlayersmanager.menu" />
+     </PreferenceScreen>
+
     <!-- Miscellaneous -->
     <PreferenceScreen
         android:id="@+id/misc_settings"
