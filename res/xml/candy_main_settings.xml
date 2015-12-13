@@ -12,44 +12,50 @@
 -->
 
 <PreferenceScreen 
-     xmlns:android="http://schemas.android.com/apk/res/android"
-     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-     android:title="@string/candy_settings_title" >
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/candy_settings_title" >
 
-     <!-- Buttons -->
-     <PreferenceScreen
+    <!-- Buttons -->
+    <PreferenceScreen
          android:id="@+id/button_settings"
          android:fragment="com.android.settings.candy.ButtonSettings"
          android:title="@string/button_settings_title" />
 
-     <!-- Layers -->
-     <PreferenceScreen
-         android:id="@+id/bitsyko_layers"
-         android:icon="@drawable/ic_bitsyko_layers"
-         android:title="@string/bitsyko_layers">
-         <intent
-             android:action="android.intent.action.MAIN"
-             android:targetPackage="com.lovejoy777.rroandlayersmanager"
-             android:targetClass="com.lovejoy777.rroandlayersmanager.menu" />
-     </PreferenceScreen>
+    <!-- Layers -->
+    <PreferenceScreen
+        android:id="@+id/bitsyko_layers"
+        android:icon="@drawable/ic_bitsyko_layers"
+        android:title="@string/bitsyko_layers">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.lovejoy777.rroandlayersmanager"
+            android:targetClass="com.lovejoy777.rroandlayersmanager.menu" />
+    </PreferenceScreen>
 
      <!-- Miscellaneous -->
-     <PreferenceScreen
-         android:id="@+id/misc_settings"
-         android:fragment="com.android.settings.candy.MiscSettings"
-         android:title="@string/misc_settings_title" />
+    <PreferenceScreen
+        android:id="@+id/misc_settings"
+        android:fragment="com.android.settings.candy.MiscSettings"
+        android:title="@string/misc_settings_title" />
 
      <!-- Multiwindow -->
-     <PreferenceScreen
-         android:key="multitwindow"
-         android:fragment="com.android.settings.candy.fragments.MultiWindow"
-         android:title="@string/multiwindow_settings_title"  />
+    <PreferenceScreen
+        android:key="multitwindow"
+        android:fragment="com.android.settings.candy.fragments.MultiWindow"
+        android:title="@string/multiwindow_settings_title"  />
 
      <!-- Navigation bar -->
-     <PreferenceScreen
-         android:key="navigation_bar_general_category"
-         android:fragment="com.android.settings.candy.NavigationBarSettings"
-         android:title="@string/navigation_bar_screen_title" />
+    <PreferenceScreen
+        android:key="navigation_bar_general_category"
+        android:fragment="com.android.settings.candy.NavigationBarSettings"
+        android:title="@string/navigation_bar_screen_title" />
+
+     <!-- Notification drawer -->
+    <PreferenceScreen
+         android:id="@+id/notification_drawer_settings"
+         android:title="@string/notification_drawer_title"
+         android:fragment="com.android.settings.candy.NotificationDrawerSettings" />
     
     <!-- Powermenu -->
     <PreferenceScreen
