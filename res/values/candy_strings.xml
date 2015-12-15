@@ -136,7 +136,7 @@
     <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion.</string>
 
     <!-- Notification drawer -->
-    <string name="notification_drawer_title">Notification drawer</string>
+    <string name="notification_drawer_title">Notification panel/QS</string>
 
     <!-- Quick settings quick pull down -->
     <string name="quick_pulldown_title">Quick pulldown</string>
