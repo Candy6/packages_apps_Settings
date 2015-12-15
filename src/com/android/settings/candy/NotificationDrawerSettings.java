@@ -26,13 +26,12 @@ import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
 
-import com.android.internal.logging.MetricsLogger;
-
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
 public class NotificationDrawerSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
+
     private static final String QUICK_PULLDOWN = "quick_pulldown";
 
     private ListPreference mQuickPulldown;
@@ -55,12 +54,7 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment
         int quickPulldownValue = Settings.System.getIntForUser(resolver,
                 Settings.System.QS_QUICK_PULLDOWN, 0, UserHandle.USER_CURRENT);
         mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
-        mQuickPulldown.setSummary(mQuickPulldown.getEntry());
-    }
-
-    @Override
-    protected int getMetricsCategory() {
-        return MetricsLogger.NOTIFICATION_DRAWER_SETTINGS;
+        updatePulldownSummary(quickPulldownValue);
     }
 
     @Override
@@ -76,9 +70,23 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment
             int index = mQuickPulldown.findIndexOfValue((String) newValue);
             Settings.System.putIntForUser(resolver, Settings.System.QS_QUICK_PULLDOWN,
                     quickPulldownValue, UserHandle.USER_CURRENT);
-            mQuickPulldown.setSummary(mQuickPulldown.getEntries()[index]);
+            updatePulldownSummary(quickPulldownValue);
             return true;
         }
         return false;
+    }
+    
+    private void updatePulldownSummary(int value) {
+        Resources res = getResources();
+
+        if (value == 0) {
+            // quick pulldown deactivated
+            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_off));
+        } else {
+            String direction = res.getString(value == 2
+                    ? R.string.quick_pulldown_summary_left
+                    : R.string.quick_pulldown_summary_right);
+            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_summary, direction));
+        }
     }
 }

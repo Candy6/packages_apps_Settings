@@ -30,7 +30,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.DEVELOPMENT;
+        return MetricsLogger.APPLICATION;
     }
 
     @Override
