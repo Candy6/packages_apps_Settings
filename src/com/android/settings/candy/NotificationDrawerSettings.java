@@ -26,6 +26,8 @@ import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
 
+import com.android.internal.logging.MetricsLogger;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -57,9 +59,10 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment
         updatePulldownSummary(quickPulldownValue);
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
+
+	@Override
+    protected int getMetricsCategory() {
+        return MetricsLogger.APPLICATION;
     }
 
     @Override
