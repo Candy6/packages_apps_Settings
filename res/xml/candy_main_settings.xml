@@ -69,6 +69,13 @@
          android:id="@+id/notification_drawer_settings"
          android:title="@string/notification_drawer_title"
          android:fragment="com.android.settings.candy.NotificationDrawerSettings" />
+
+    <!-- Recents -->
+    <PreferenceScreen
+	 android:id="@+id/recents_settings"
+	 android:fragment="com.android.settings.candy.RecentsSettings"
+	 android:title="@string/recents_settings_title" />
+
     
     <!-- Powermenu -->
     <PreferenceScreen

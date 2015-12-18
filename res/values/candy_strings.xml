@@ -283,4 +283,7 @@
     <!-- Status bar | Brightness control -->
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust the brightness by sliding across the status bar</string>
+
+    <!-- Recents -->
+    <string name="recents_settings_title">Recents panel</string>
 </resources>
