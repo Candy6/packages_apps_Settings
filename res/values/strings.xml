@@ -6011,7 +6011,7 @@
     <string name="vibrate_when_ringing_title">Also vibrate for calls</string>
 
     <!-- Sound & notification: Notification section header [CHAR LIMIT=30] -->
-    <string name="notification_section_header">Notification</string>
+    <string name="notification_section_header">Notification settings</string>
 
     <!-- Sound & notification: Advanced section header [CHAR LIMIT=30] -->
     <string name="advanced_section_header">Advanced settings</string>
@@ -6336,7 +6336,7 @@
 
     <!-- [CHAR LIMIT=NONE] Content description for per-app notification
          settings button -->
-    <string name="notification_app_settings_button">Notification settings</string>
+    <string name="notification_app_settings_button">Notification</string>
 
 
    <!-- [CHAR LIMIT=35] Feedback on the device -->
