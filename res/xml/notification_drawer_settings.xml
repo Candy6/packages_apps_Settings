@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (C) 2014 The CyanogenMod Project
+<!-- Copyright (C) 2015 CandyRoms
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -28,6 +28,12 @@
             android:entries="@array/quick_pulldown_entries"
             android:entryValues="@array/quick_pulldown_values"
             android:persistent="false" />
+
+        <com.android.settings.preference.SystemSettingSwitchPreference
+            android:key="force_expanded_notifications"
+            android:title="@string/notification_force_expand_title"
+            android:summary="@string/notification_force_expand_summary"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 
