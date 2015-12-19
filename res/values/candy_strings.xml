@@ -136,9 +136,9 @@
     <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion.</string>
 
     <!-- Notification drawer -->
-    <string name="notification_drawer_title">Notification panel &amp; QS</string>
-    <string name="notification_panel_title">Notification panel</string>
+    <string name="notification_drawer_title">QS &amp; notification panel</string>
     <string name="qs_panel_title">Quick settings panel</string>
+    <string name="notification_panel_title">Notification panel</string>
 
     <!-- Quick settings quick pull down -->
     <string name="quick_pulldown_title">Quick pulldown</string>
@@ -314,6 +314,6 @@
     <string name="adb_notify_summary">Display a notification when USB or network debugging is enabled</string>
     <string name="adb_over_network">ADB over network</string>
     <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi\u2011Fi, USB networks). This setting is reset on reboot</string>
-    <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string> 
+    <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your device is open for intrusions on all connected networks!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string> 
 
 </resources>

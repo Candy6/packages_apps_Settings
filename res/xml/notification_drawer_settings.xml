@@ -19,8 +19,9 @@
     android:title="@string/notification_drawer_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+
     <PreferenceCategory
-        android:title="@string/notification_panel_title">
+        android:title="@string/qs_panel_title">
 
         <ListPreference
             android:key="quick_pulldown"
@@ -28,18 +29,6 @@
             android:entries="@array/quick_pulldown_entries"
             android:entryValues="@array/quick_pulldown_values"
             android:persistent="false" />
-
-        <com.android.settings.preference.SystemSettingSwitchPreference
-            android:key="force_expanded_notifications"
-            android:title="@string/notification_force_expand_title"
-            android:summary="@string/notification_force_expand_summary"
-            android:defaultValue="false" />
-
-    </PreferenceCategory>
-
-
-    <PreferenceCategory
-        android:title="@string/qs_panel_title">
 
         <com.android.settings.preference.SecureSettingSwitchPreference
             android:key="qs_show_brightness_slider"
@@ -64,6 +53,17 @@
             android:title="@string/quick_settings_vibrate_title"
             android:summary="@string/quick_settings_vibrate_summary"
             android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/notification_panel_title">
+
+        <com.android.settings.preference.SystemSettingSwitchPreference
+            android:key="force_expanded_notifications"
+            android:title="@string/notification_force_expand_title"
+            android:summary="@string/notification_force_expand_summary"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 
