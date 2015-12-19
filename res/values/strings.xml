@@ -1848,7 +1848,7 @@
     <string name="home_settings">Home</string>
     <string name="display_settings_title">Display</string>
     <!-- Sound settings screen heading -->
-    <string name="sound_settings">Sound</string>
+    <string name="sound_settings">Sound settings</string>
     <!-- Sound settings screen, setting option summary text -->
     <string name="ringtone_summary">""</string>
     <!-- Sound settings screen, volume title -->
@@ -1864,7 +1864,7 @@
     <!-- Sound settings screen, the title of the volume bar to adjust the incoming call volume -->
     <string name="incoming_call_volume_title">Ringtone</string>
     <!-- Sound settings screen, the title of the volume bar to adjust the notification volume -->
-    <string name="notification_volume_title">Notification</string>
+    <string name="notification_volume_title">Notification settings</string>
     <!-- Sound settings screen, the caption of the checkbox for having the notification volume be
          the same as the incoming call volume. -->
     <string name="checkbox_notification_same_as_incoming_call">Use incoming call volume for notifications</string>
@@ -5966,7 +5966,7 @@
     <!-- Sounds and Notification -->
 
     <!-- Sound & notification: Settings header. [CHAR LIMIT=30] -->
-    <string name="notification_settings">Sound &amp; lights</string>
+    <string name="notification_settings">Sounds &amp; lights</string>
 
     <!-- Sound & notification > Sound section: Title for the option managing media volume. [CHAR LIMIT=30] -->
     <string name="media_volume_option_title">Media volume</string>
@@ -6014,7 +6014,7 @@
     <string name="notification_section_header">Notification</string>
 
     <!-- Sound & notification: Advanced section header [CHAR LIMIT=30] -->
-    <string name="advanced_section_header">Advanced</string>
+    <string name="advanced_section_header">Advanced settings</string>
 
     <!-- Sound & notification > Notification section: Title for the pulse notification light option. [CHAR LIMIT=30] -->
     <string name="notification_pulse_title">Pulse notification light</string>
